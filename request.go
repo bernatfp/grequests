@@ -232,7 +232,7 @@ func createMultiPartPostRequest(httpMethod, userURL string, ro *RequestOptions) 
 			return nil, errors.New("grequests: Pointer FileContents cannot be nil")
 		}
 
-		fileName := "file"
+		fileName := "uploaded_data"
 
 		if len(ro.Files) > 1 {
 			fileName = strings.Join([]string{"file", strconv.Itoa(i + 1)}, "")
